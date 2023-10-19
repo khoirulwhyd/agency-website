@@ -21,7 +21,7 @@
       <div class="container px-4 max-w-screen-xl mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start ">
           <img src="../public/agency-logo.svg"
-            class="w-40 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
+            class="w-[200px] text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
           <!-- <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#">Notus JS</a> -->
           <button data-collapse-toggle="navbar-default" type="button"
             class=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -39,33 +39,31 @@
             class="flex flex-col lg:flex-row list-none lg:ml-auto items-center md:space-x-12 space-x-0 transition duration-700 ease-linear">
             <li class="flex items-center">
               <a href="#"
-                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                class="text-[#373737] md:text-white px-3 py-4 lg:py-2 flex items-center text-[18px] font-regular">
                 Home
               </a>
             </li>
             <li class="flex items-center">
               <a href="#"
-                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                class="text-[#373737] md:text-white px-3 py-4 lg:py-2 flex items-center text-[18px] font-regular">
                 Our Services
               </a>
             </li>
             <li class="flex items-center">
               <a href="#"
-                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                class="text-[#373737] md:text-white px-3 py-4 lg:py-2 flex items-center text-[18px] font-regular">
                 About Us
               </a>
             </li>
             <li class="flex items-center">
               <a href="#"
-                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                class="text-[#373737] md:text-white px-3 py-4 lg:py-2 flex items-center text-[18px] font-regular">
                 Portfolio
               </a>
             </li>
             <li class="flex items-center">
-              <a class="bg-white text-[#4F52E5] active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                href="https://www.creative-tim.com/product/notus-js?ref=njs-index" target="_blank">
-                Start Projects
-              </a>
+              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-[18] px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Start Projects</button>
             </li>
           </ul>
         </div>
@@ -102,19 +100,76 @@
   </section>
   <!-- end hero -->
   <!-- our services -->
-  <section>
-    <div class="py-12 md:py-14 container px-4 max-w-screen-xl mx-auto flex flex-wrap items-center justify-between">
+  <section class="py-10">
+    <div class="md:py-14 container px-4 max-w-screen-xl mx-auto flex flex-wrap items-center justify-between">
       <div
-        class="container gap-12 flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-        <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <img src="../public/hero.svg" alt="" class="object-contain h-100 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        class="py-20 md:py-12 container gap-12 flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div
+          class="flex flex-col md:flex-col items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 order-2 md:order-1">
+          <!-- <img src="../public/hero.svg" alt="" class="object-contain h-100 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"> -->
+          <a href="#"
+            class="my-4 px-6 flex items-center p-3 text-base rounded-lg bg-[#F1F4FF] hover:bg-[#E0E7FF] group hover:shadow border-2 border-[#BFCDFF]">
+            <div class="icon w-[80px] h-[80px] p-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path
+                  d="M15 0.375C12.1075 0.375 9.27986 1.23274 6.87479 2.83976C4.46972 4.44677 2.5952 6.73089 1.48827 9.40325C0.381337 12.0756 0.091713 15.0162 0.656022 17.8532C1.22033 20.6902 2.61323 23.2961 4.65857 25.3414C6.70391 27.3868 9.30984 28.7797 12.1468 29.344C14.9838 29.9083 17.9244 29.6187 20.5968 28.5117C23.2691 27.4048 25.5532 25.5303 27.1602 23.1252C28.7673 20.7201 29.625 17.8926 29.625 15C29.6209 11.1225 28.0788 7.40492 25.3369 4.66309C22.5951 1.92125 18.8775 0.379095 15 0.375ZM11.2917 20.625H18.7083C17.9531 23.2041 16.6875 25.5286 15 27.3595C13.3125 25.5286 12.0469 23.2041 11.2917 20.625ZM10.7813 18.375C10.4081 16.1405 10.4081 13.8595 10.7813 11.625H19.2188C19.5919 13.8595 19.5919 16.1405 19.2188 18.375H10.7813ZM2.62501 15C2.62403 13.8587 2.78163 12.7229 3.09329 11.625H8.50173C8.1661 13.8625 8.1661 16.1375 8.50173 18.375H3.09329C2.78163 17.2771 2.62403 16.1413 2.62501 15ZM18.7083 9.375H11.2917C12.0469 6.79594 13.3125 4.47141 15 2.64047C16.6875 4.47141 17.9531 6.79594 18.7083 9.375ZM21.4983 11.625H26.9067C27.5311 13.8317 27.5311 16.1683 26.9067 18.375H21.4983C21.8339 16.1375 21.8339 13.8625 21.4983 11.625ZM26.0208 9.375H21.0384C20.4643 7.11587 19.5002 4.97434 18.1894 3.04688C19.864 3.4969 21.4259 4.29242 22.7747 5.38228C24.1234 6.47213 25.2292 7.83219 26.0208 9.375ZM11.8106 3.04688C10.4999 4.97434 9.53569 7.11587 8.96157 9.375H3.97923C4.77084 7.83219 5.87658 6.47213 7.22533 5.38228C8.57409 4.29242 10.136 3.4969 11.8106 3.04688ZM3.97923 20.625H8.96157C9.53569 22.8841 10.4999 25.0257 11.8106 26.9531C10.136 26.5031 8.57409 25.7076 7.22533 24.6177C5.87658 23.5279 4.77084 22.1678 3.97923 20.625ZM18.1894 26.9531C19.5002 25.0257 20.4643 22.8841 21.0384 20.625H26.0208C25.2292 22.1678 24.1234 23.5279 22.7747 24.6177C21.4259 25.7076 19.864 26.5031 18.1894 26.9531Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="">
+              <p class="text-gray-700 font-semibold text-16 md:text-[20px] px-6 py-0 md:py-2">Website Development</p>
+              <p class="text-gray-500 font-regular text-[14px] md:text-[16px] px-6 max-w-xs">We provide website creation services in
+                any field</p>
+            </div>
+          </a>
+          <a href="#"
+            class="my-4 px-6 flex items-center p-3 text-base rounded-lg bg-[#F1F4FF] hover:bg-[#E0E7FF] group hover:shadow border-2 border-[#BFCDFF]">
+            <div class="icon w-[80px] h-[80px] p-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M25.5 1.515L10.5 1.5C8.85 1.5 7.5 2.85 7.5 4.5V31.5C7.5 33.15 8.85 34.5 10.5 34.5H25.5C27.15 34.5 28.5 33.15 28.5 31.5V4.5C28.5 2.85 27.15 1.515 25.5 1.515ZM25.5 28.5H10.5V7.5H25.5V28.5Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="text-gray-700 font-semibold text-16 md:text-[20px] px-6 py-0 md:py-2">Mobile Apps Development</p>
+              <p class="text-gray-500 font-regular text-[14px] md:text-[16px] px-6 max-w-xs">We provide mobile apps development services in any field</p>
+            </div>
+          </a>
+          <a href="#"
+            class="my-4 md:px-6 flex items-center p-3 text-base rounded-lg bg-[#F1F4FF] hover:bg-[#E0E7FF] group hover:shadow border-2 border-[#BFCDFF]">
+            <div class="icon w-[80px] h-[80px] p-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M17.3805 10.4985H11.553C10.9372 10.4983 10.3362 10.6876 9.83173 11.0408C9.32723 11.3939 8.94363 11.8938 8.73302 12.4725L3.09302 27.9855C2.89352 28.533 3.03002 29.1465 3.44102 29.559L3.88052 29.9985L13.5135 20.3655C13.512 20.3265 13.5015 20.2875 13.5015 20.2485C13.5015 19.8035 13.6335 19.3685 13.8807 18.9984C14.1279 18.6284 14.4794 18.34 14.8905 18.1697C15.3016 17.9994 15.754 17.9549 16.1905 18.0417C16.6269 18.1285 17.0278 18.3428 17.3425 18.6575C17.6572 18.9722 17.8715 19.3731 17.9583 19.8095C18.0451 20.246 18.0005 20.6984 17.8302 21.1095C17.66 21.5206 17.3716 21.872 17.0016 22.1193C16.6315 22.3665 16.1965 22.4985 15.7515 22.4985C15.7125 22.4985 15.6735 22.488 15.6345 22.4865L6.00152 32.1195L6.44102 32.559C6.6427 32.7612 6.89805 32.9014 7.17689 32.963C7.45573 33.0247 7.74639 33.0053 8.01452 32.907L23.5275 27.2655C24.1062 27.0549 24.6061 26.6713 24.9592 26.1668C25.3124 25.6623 25.5017 25.0613 25.5015 24.4455V18.618L28.5 15.621L20.379 7.49997L17.3805 10.4985ZM29.91 13.5915L22.41 6.09147L25.59 2.90997L33.09 10.41L29.91 13.5915Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="text-gray-700 font-semibold text-16 md:text-[20px] px-6 py-0 md:py-2">UI/UX Designer</p>
+              <p class="text-gray-500 font-regular text-[14px] md:text-[16px] px-6 max-w-xs">We are the most trusted in the field of UI/UX design</p>
+            </div>
+          </a>
+          <a href="#"
+            class="my-4 md:px-6 flex items-center p-3 text-base rounded-lg bg-[#F1F4FF] hover:bg-[#E0E7FF] group hover:shadow border-2 border-[#BFCDFF]">
+            <div class="icon w-[80px] h-[80px] p-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M26.25 18C25.6533 18 25.081 17.7629 24.659 17.341C24.2371 16.919 24 16.3467 24 15.75C24 15.1533 24.2371 14.581 24.659 14.159C25.081 13.7371 25.6533 13.5 26.25 13.5C26.8467 13.5 27.419 13.7371 27.841 14.159C28.2629 14.581 28.5 15.1533 28.5 15.75C28.5 16.3467 28.2629 16.919 27.841 17.341C27.419 17.7629 26.8467 18 26.25 18ZM21.75 12C21.1533 12 20.581 11.7629 20.159 11.341C19.7371 10.919 19.5 10.3467 19.5 9.75C19.5 9.15326 19.7371 8.58097 20.159 8.15901C20.581 7.73705 21.1533 7.5 21.75 7.5C22.3467 7.5 22.919 7.73705 23.341 8.15901C23.7629 8.58097 24 9.15326 24 9.75C24 10.3467 23.7629 10.919 23.341 11.341C22.919 11.7629 22.3467 12 21.75 12ZM14.25 12C13.6533 12 13.081 11.7629 12.659 11.341C12.2371 10.919 12 10.3467 12 9.75C12 9.15326 12.2371 8.58097 12.659 8.15901C13.081 7.73705 13.6533 7.5 14.25 7.5C14.8467 7.5 15.419 7.73705 15.841 8.15901C16.2629 8.58097 16.5 9.15326 16.5 9.75C16.5 10.3467 16.2629 10.919 15.841 11.341C15.419 11.7629 14.8467 12 14.25 12ZM9.75 18C9.15326 18 8.58097 17.7629 8.15901 17.341C7.73705 16.919 7.5 16.3467 7.5 15.75C7.5 15.1533 7.73705 14.581 8.15901 14.159C8.58097 13.7371 9.15326 13.5 9.75 13.5C10.3467 13.5 10.919 13.7371 11.341 14.159C11.7629 14.581 12 15.1533 12 15.75C12 16.3467 11.7629 16.919 11.341 17.341C10.919 17.7629 10.3467 18 9.75 18ZM18 4.5C14.4196 4.5 10.9858 5.92232 8.45406 8.45406C5.92232 10.9858 4.5 14.4196 4.5 18C4.5 21.5804 5.92232 25.0142 8.45406 27.5459C10.9858 30.0777 14.4196 31.5 18 31.5C18.5967 31.5 19.169 31.2629 19.591 30.841C20.0129 30.419 20.25 29.8467 20.25 29.25C20.25 28.665 20.025 28.14 19.665 27.75C19.32 27.345 19.095 26.82 19.095 26.25C19.095 25.6533 19.3321 25.081 19.754 24.659C20.176 24.2371 20.7483 24 21.345 24H24C25.9891 24 27.8968 23.2098 29.3033 21.8033C30.7098 20.3968 31.5 18.4891 31.5 16.5C31.5 9.87 25.455 4.5 18 4.5Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="text-gray-700 font-semibold text-16 md:text-[20px] px-6 py-0 md:py-2">Multimedia Designer</p>
+              <p class="text-gray-500 font-regular text-[14px] md:text-[16px] px-6 max-w-xs">Video making, audio editing, graphic design, animation, we are the experts</p>
+            </div>
+          </a>
         </div>
-        <div class="flex flex-col p-0 text-left rounded-sm max-w-xl lg:max-w-md xl:max-w-lg xl:tw-text-left">
-          <span class="uppercase font-semibold tracking-wide text-[20px] text-[#4F52E5] mb-5 text-center md:text-left">Our Services</span>
+
+        <div
+          class="md:mb-10 mb-[200px] flex flex-col p-0 text-left rounded-sm max-w-xl lg:max-w-md xl:max-w-lg xl:tw-text-left order-1 md:order-2">
+          <span
+            class="uppercase font-semibold tracking-wide text-16 md:text-[20px] text-[#4F52E5] mb-5 text-center md:text-left">Our
+            Services</span>
           <h1 class="text-gray-700 text-[32px] font-bold sm:text-5xl text-center md:text-left">With our services
             <span class="text-gray">all your problems will be resolved</span>
           </h1>
-          <p class="mt-6 mb-8 text-lg sm:mb-12 text-gray-500 text-center md:text-left">We are a group of people who have a high level of success in solving problems.
+          <p class="mt-6 mb-8 text-lg sm:mb-12 text-gray-500 text-center md:text-left">We are a group of people who have
+            a high level of success in solving problems.
           </p>
           <div
             class="flex flex-col space-y-4 sm:items-left sm:justify-left sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
@@ -126,6 +181,8 @@
       </div>
     </div>
   </section>
+  
+  
   <!-- end our services -->
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
