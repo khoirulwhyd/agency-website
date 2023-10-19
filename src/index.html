@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- navbar / headers -->
+  <section class="container max-w-screen-xl bg-black">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 max-w-screen-xl mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start ">
+          <img src="../public/agency-logo.svg"
+            class="w-40 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
+          <!-- <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#">Notus JS</a> -->
+          <button data-collapse-toggle="navbar-default" type="button"
+            class=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default" aria-expanded="false" onclick="Menu(this)">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center lg:shadow-none rounded-lg bg-white md:bg-transparent hidden"
+          id="navbar-default">
+          <ul
+            class="flex flex-col lg:flex-row list-none lg:ml-auto items-center md:space-x-12 space-x-0 transition duration-700 ease-linear">
+            <li class="flex items-center">
+              <a href="#"
+                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                Home
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#"
+                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                Our Services
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#"
+                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                About Us
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#"
+                class="text-[#4F52E5] md:text-white px-3 py-4 lg:py-2 flex items-center text-[14px] font-regular">
+                Portfolio
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a class="bg-white text-[#4F52E5] active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                href="https://www.creative-tim.com/product/notus-js?ref=njs-index" target="_blank">
+                Start Projects
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- end navbar / headers -->
+  <!-- hero -->
+  <section class="background py-10">
+    <div class="py-12 md:py-14 container px-4 max-w-screen-xl mx-auto flex flex-wrap items-center justify-between">
+      <div
+        class="container gap-12 flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div
+          class="flex flex-col p-0 text-left rounded-sm max-w-xl lg:max-w-md xl:max-w-lg xl:tw-text-left order-2 md:order-1">
+          <h1 class="text-white text-4xl font-bold sm:text-6xl text-center md:text-left">Innovative
+            <span class="text-white">Digital</span> Solution
+          </h1>
+          <p class="mt-6 mb-8 text-lg sm:mb-12 text-white text-center md:text-left">Integrated Digital Solutions for
+            <br class="hidden md:inline lg:hidden">the Future of Your Business
+          </p>
+          <div
+            class="flex flex-col space-y-4 sm:items-left sm:justify-left sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a href="#"
+              class="px-8 py-3 text-lg font-semibold text-white border rounded-md hover:bg-white hover:text-[#4F52E5] text-center">Start
+              Now</a>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 order-1 md:order-2">
+          <img src="../public/hero.svg" alt="" class="object-contain h-100 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end hero -->
+  <!-- our services -->
+  <section>
+    <div class="py-12 md:py-14 container px-4 max-w-screen-xl mx-auto flex flex-wrap items-center justify-between">
+      <div
+        class="container gap-12 flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img src="../public/hero.svg" alt="" class="object-contain h-100 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        </div>
+        <div class="flex flex-col p-0 text-left rounded-sm max-w-xl lg:max-w-md xl:max-w-lg xl:tw-text-left">
+          <span class="uppercase font-semibold tracking-wide text-[20px] text-[#4F52E5] mb-5 text-center md:text-left">Our Services</span>
+          <h1 class="text-gray-700 text-[32px] font-bold sm:text-5xl text-center md:text-left">With our services
+            <span class="text-gray">all your problems will be resolved</span>
+          </h1>
+          <p class="mt-6 mb-8 text-lg sm:mb-12 text-gray-500 text-center md:text-left">We are a group of people who have a high level of success in solving problems.
+          </p>
+          <div
+            class="flex flex-col space-y-4 sm:items-left sm:justify-left sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a href="#"
+              class="px-8 py-3 text-lg font-semibold text-white border rounded-md bg-[#4F52E5] hover:bg-[#3D40DE] hover:text-white text-center">Start
+              Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end our services -->
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
