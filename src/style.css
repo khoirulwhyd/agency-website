@@ -26,3 +26,8 @@ body{
   border-radius: 39px;
 background: var(--gradient-blue-to-green, linear-gradient(180deg, #5056E5 0%, #5E99D0 100%));
 }
+
+.sosmed {
+  align-items: center;
+  justify-content: center;
+}
